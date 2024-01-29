@@ -1,0 +1,9 @@
+sifat@sifat-VirtualBox:~$ ls -a
+.              .config    Music             .ssh
+..             Desktop    .pam_environment  .sudo_as_admin_successful
+.bash_history  Documents  Pictures          Templates
+.bash_logout   Downloads  .profile          Videos
+.bashrc        .gnupg     Public
+.cache         .local     snap
+sifat@sifat-VirtualBox:~$ 
+

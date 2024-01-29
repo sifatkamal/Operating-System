@@ -1,0 +1,12 @@
+sifat@sifat-VirtualBox:~$ cd desktop
+bash: cd: desktop: No such file or directory
+sifat@sifat-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sifat@sifat-VirtualBox:~$ cd Desktop
+sifat@sifat-VirtualBox:~/Desktop$ touch course.txt
+sifat@sifat-VirtualBox:~/Desktop$ gedit course.txt
+^C
+sifat@sifat-VirtualBox:~/Desktop$ grep -c CSE  course.txt
+3
+sifat@sifat-VirtualBox:~/Desktop$ 
+

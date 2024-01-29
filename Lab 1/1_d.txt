@@ -1,0 +1,22 @@
+sifat@sifat-VirtualBox:~$ cd desktop
+bash: cd: desktop: No such file or directory
+sifat@sifat-VirtualBox:~$ cd Desktop
+sifat@sifat-VirtualBox:~/Desktop$ touch a.txt
+sifat@sifat-VirtualBox:~/Desktop$ gedit a.txt
+^C
+sifat@sifat-VirtualBox:~/Desktop$ sed -n '5,17p' a.txt
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+sifat@sifat-VirtualBox:~/Desktop$ 
+

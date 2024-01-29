@@ -1,0 +1,52 @@
+sifat@sifat-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sifat@sifat-VirtualBox:~$ cd Desktop
+sifat@sifat-VirtualBox:~/Desktop$ touch 20101231_1.txt 20101231_2.txt 20101231_3.txt 20101231_4.txt
+sifat@sifat-VirtualBox:~/Desktop$ mkdir sifat1 sifat2
+sifat@sifat-VirtualBox:~/Desktop$ mv 20101231_1.txt 20101231_2.txt 20101231_3.txt sifat1
+sifat@sifat-VirtualBox:~/Desktop$ cd sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ cp 20101231_1.txt 20101231_2.txt ~/desktop/sifat2
+cp: target '/home/sifat/desktop/sifat2' is not a directory
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ cp 20101231_1.txt 20101231_2.txt /Desktop/sifat2
+cp: target '/Desktop/sifat2' is not a directory
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ cp 20101231_1.txt 20101231_2.txt Home/Desktop/sifat2
+cp: target 'Home/Desktop/sifat2' is not a directory
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ cp 20101231_1.txt 20101231_2.txt ~/Desktop/sifat2
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ cd ..
+sifat@sifat-VirtualBox:~/Desktop$ mkdir sifat3
+sifat@sifat-VirtualBox:~/Desktop$ cp -r sifat1 sifat3
+sifat@sifat-VirtualBox:~/Desktop$ cd sifat3
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ ls
+sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ cd sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat3/sifat1$ ls -l
+total 0
+-rw-rw-r-- 1 sifat sifat 0 Nov  2 23:01 20101231_1.txt
+-rw-rw-r-- 1 sifat sifat 0 Nov  2 23:01 20101231_2.txt
+-rw-rw-r-- 1 sifat sifat 0 Nov  2 23:01 20101231_3.txt
+sifat@sifat-VirtualBox:~/Desktop/sifat3/sifat1$ cd ..
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ ls -l
+total 4
+drwxrwxr-x 2 sifat sifat 4096 Nov  2 23:01 sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ chmod go=rx sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ ls-l
+ls-l: command not found
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ ls -l
+total 4
+drwxr-xr-x 2 sifat sifat 4096 Nov  2 23:01 sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ cd..
+cd..: command not found
+sifat@sifat-VirtualBox:~/Desktop/sifat3$ cd ..
+sifat@sifat-VirtualBox:~/Desktop$ ls
+20101231_4.txt  Codes  sifat1  sifat2  sifat3
+sifat@sifat-VirtualBox:~/Desktop$ cd sifat1
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ ls
+20101231_1.txt  20101231_2.txt  20101231_3.txt
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ rm -r 20101231_1.txt 20101231_2.txt 
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ ls
+20101231_3.txt
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ ls -l
+total 0
+-rw-rw-r-- 1 sifat sifat 0 Nov  2 22:45 20101231_3.txt
+sifat@sifat-VirtualBox:~/Desktop/sifat1$ 
+
